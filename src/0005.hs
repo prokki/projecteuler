@@ -5,8 +5,6 @@ What is the smallest positive number that is evenly divisible by all of the numb
 -}
 module Main (main) where
 
-import Data.List
 import Math
 
--- $ filter (isPalindromic)
-main = print True
+main = print $ lcmList [1..20]
