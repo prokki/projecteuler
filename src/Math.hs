@@ -26,3 +26,8 @@ primes x = primes' x 2 where
 
 isPalindromic :: Int -> Bool
 isPalindromic x = String.isPalindromic (show x)
+
+lcmList :: [Int] -> Int
+lcmList []       = error "List has to have at least one item"
+lcmList [x]      = x
+lcmList (x:y:xs) = lcmList ((lcm x y):xs)
